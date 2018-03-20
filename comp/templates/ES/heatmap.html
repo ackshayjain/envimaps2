@@ -30,10 +30,10 @@
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#comp">COMPLAINTS</a></li>
                             {% endblock %}
 {% block body %}
+    <script src="{% static 'js/heatmap.js' %}"></script>
     <body onload="updateDataPoints({{ latLng }})">
     <div id="map"></div>
 
-    <script src="{% static 'js/heatmap.js' %}"></script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlL0EinRTWJbAdRfUbWNowPu4Tk03ECwI&libraries=visualization&callback=initMap">
     </script>
