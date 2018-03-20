@@ -12,8 +12,8 @@ class Complaint(models.Model):
     location = models.CharField(max_length = 100)
 
     
-    # lat = models.FloatField()
-    # lon = models.FloatField()
+    lat = models.FloatField(default="0")
+    lon = models.FloatField(default="0")
 
     pic = models.ImageField(upload_to='img')
 
