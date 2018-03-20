@@ -31,6 +31,58 @@ def index(request):
         form = AddForm()
         comp_list = Complaint.objects.all().order_by('-date_published')
         count = Complaint.objects.count()
+<<<<<<< HEAD
+        k=0
+        list_one = []
+        list_rest = []
+        for i in comp_list:
+        	if(k==0):
+        		list_one.append(i)
+        	else:
+        		list_rest.append(i)
+        	k=k+1
+
+        # count_3 = count//3
+        # if(count%3!=0):
+        #   count_3 +=1
+
+        # k=0
+        # comp_sub_list=[]
+        # comp_sub_list_one=[]
+
+        # loc_list=[]
+        
+        # # print(count_3)
+        # for i in comp_list:
+        #   loc_list.append(str(i.location))
+          
+
+        # for i in range(0,count_3):
+        #   comp_sub=[]
+
+          
+        #   if(i==count_3-1 and count%3!=0):
+        #     r = range(0,count%3)
+
+        #   else:
+        #     r = range(0,3)
+        #   # print(r)
+        #   for j in r:
+        #     comp_sub.append(comp_list[k])
+        #     k=k+1
+        #     # print(k)
+
+        #   if(i==0):
+        #     comp_sub_list_one = comp_sub
+        #   else:
+        #     comp_sub_list.append(comp_sub)
+
+        # count_range = range(1,count_3)
+        count_range = range(1,count)
+
+        # context = {'comp':comp_list, 'sub_list':comp_sub_list, 'list_one':comp_sub_list_one,'r':count_range, 'form':form, 'loc':loc_list}
+        context = {'comp':comp_list, 'r':count_range, 'one':list_one, 'rest':list_rest, 'form':form}
+=======
         count_3 = count//3
         if(count%3!=0):
           count_3 +=1
@@ -71,6 +123,7 @@ def index(request):
         count_range = range(1,count_3)
         context = {'comp':comp_list, 'sub_list':comp_sub_list, 'list_one':comp_sub_list_one,'r':count_range, 'form':form, 'loc':loc_list, 'lat':lat_list, 'lon':lon_list}
 
+>>>>>>> 0ee4225d8589f0f4cc375a5304499f60719af3df
     
 
 
