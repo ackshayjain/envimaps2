@@ -1,4 +1,10 @@
 # envimaps2
-WHat's up guys? 
-WELCOME TO THE NEW AND UPDATED VERSION OF ENVIMAPS.
-Get ready to be amazed.
+
+Hi. You can locate the following stuff in our project :
+
+-Screenshot of the website in the screenshot folder.
+-Powerpoint presentation 
+-An enthusiastic project video
+
+
+This webapp runs on Django 1.8 and Python 2.7
