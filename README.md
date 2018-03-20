@@ -7,4 +7,8 @@ Hi. You can locate the following stuff in our project :
 -An enthusiastic project video
 
 
-This webapp runs on Django 1.8 and Python 2.7
+This webapp runs on 
+Django 1.8
+Python 2.7
+Pillow
+requests
