@@ -31,7 +31,7 @@ def index(request):
         form = AddForm()
         comp_list = Complaint.objects.all().order_by('-date_published')
         count = Complaint.objects.count()
-<<<<<<< HEAD
+
         k=0
         list_one = []
         list_rest = []
@@ -82,48 +82,47 @@ def index(request):
 
         # context = {'comp':comp_list, 'sub_list':comp_sub_list, 'list_one':comp_sub_list_one,'r':count_range, 'form':form, 'loc':loc_list}
         context = {'comp':comp_list, 'r':count_range, 'one':list_one, 'rest':list_rest, 'form':form}
-=======
-        count_3 = count//3
-        if(count%3!=0):
-          count_3 +=1
 
-        k=0
-        comp_sub_list=[]
-        comp_sub_list_one=[]
+        # count_3 = count//3
+        # if(count%3!=0):
+        #   count_3 +=1
 
-        loc_list=[]
-        lat_list=[]
-        lon_list=[]
-        # print(count_3)
-        for i in comp_list:
-          loc_list.append(str(i.location))
-          lat_list.append(i.lat)
-          lon_list.append(i.lon)
+        # k=0
+        # comp_sub_list=[]
+        # comp_sub_list_one=[]
 
-        for i in range(0,count_3):
-          comp_sub=[]
+        # loc_list=[]
+        # lat_list=[]
+        # lon_list=[]
+        # # print(count_3)
+        # for i in comp_list:
+        #   loc_list.append(str(i.location))
+        #   lat_list.append(i.lat)
+        #   lon_list.append(i.lon)
+
+        # for i in range(0,count_3):
+        #   comp_sub=[]
 
           
-          if(i==count_3-1 and count%3!=0):
-            r = range(0,count%3)
+        #   if(i==count_3-1 and count%3!=0):
+        #     r = range(0,count%3)
 
-          else:
-            r = range(0,3)
-          # print(r)
-          for j in r:
-            comp_sub.append(comp_list[k])
-            k=k+1
-            # print(k)
+        #   else:
+        #     r = range(0,3)
+        #   # print(r)
+        #   for j in r:
+        #     comp_sub.append(comp_list[k])
+        #     k=k+1
+        #     # print(k)
 
-          if(i==0):
-            comp_sub_list_one = comp_sub
-          else:
-            comp_sub_list.append(comp_sub)
+        #   if(i==0):
+        #     comp_sub_list_one = comp_sub
+        #   else:
+        #     comp_sub_list.append(comp_sub)
 
-        count_range = range(1,count_3)
-        context = {'comp':comp_list, 'sub_list':comp_sub_list, 'list_one':comp_sub_list_one,'r':count_range, 'form':form, 'loc':loc_list, 'lat':lat_list, 'lon':lon_list}
+        # count_range = range(1,count_3)
+        # context = {'comp':comp_list, 'sub_list':comp_sub_list, 'list_one':comp_sub_list_one,'r':count_range, 'form':form, 'loc':loc_list, 'lat':lat_list, 'lon':lon_list}
 
->>>>>>> 0ee4225d8589f0f4cc375a5304499f60719af3df
     
 
 
