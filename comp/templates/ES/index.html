@@ -1,11 +1,14 @@
 {% extends 'ES/base.html' %}
 {% block body %}
 {% load staticfiles %}
+
             <div class="container hero">
                 <div class="row">
                     <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
                         <h1>Welcome to EnviMaps</h1>
+
                         <p>Help people you care about & those around you be safe by reporting an evrionmental issue right now!</p><a href="#report"><button class="btn btn-light btn-lg action-button" type="button">REPORT NOW</button></a></div>
+
                     <div
                         class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
                         <div class="iphone-mockup"><img src="{% static 'img/cm.jpg' %}" class="device"></div>
@@ -74,25 +77,8 @@
                 <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 offset-0 offset-sm-0 offset-md-1 offset-lg-2 offset-xl-3">
                     <div>
 
-                        <!-- <form>
-=======
-                        <form>
->>>>>>> 0ee4225d8589f0f4cc375a5304499f60719af3df
-                            <div class="form-group"><input class="form-control" type="text" placeholder="Title" style="height:42px;"></div>
-                            <div class="form-group"><input class="form-control" type="text" placeholder="Location"></div>
-                            <div class="form-group"><textarea class="form-control" rows="4" placeholder="Description"></textarea></div>
-                            <div class="form-group">
-                                <div class="form-row">
-                                    <div class="col-12 col-sm-12 col-md-8" style="margin-bottom:8px;">
-                                        <div><img class="img-fluid" src="http://via.placeholder.com/350x150"></div>
-                                    </div>
-                                    <div class="col-12 col-md-4 d-flex justify-content-end align-self-end" style="margin-bottom:8px;"><button class="btn btn-outline-success" type="button">Select Image</button></div>
-                                </div>
-                            </div>
-                            <div class="form-group"><button class="btn btn-primary btn-lg" type="submit">Report</button></div>
-<<<<<<< HEAD
-
-                        </form> -->
+                        
+                            
                          <form action="{% url 'home:index' %}" method="post" enctype="multipart/form-data">
 
                             {% csrf_token %}
@@ -108,7 +94,10 @@
     <div class="map-clean">
         <div class="container" id="map">
             <div class="intro">
-                <h2 class="text-center">Heat Map</h2>
+                <h2 class="text-center">Pollution Maps</h2>
             </div>
         </div><iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaEw6o8OhJvRQnTF3gI_tibMejtfasOlY&amp;q=Paris%2C+France&amp;zoom=15"></iframe></div>
+
+
    {% endblock %}
+
