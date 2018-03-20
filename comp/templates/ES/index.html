@@ -32,7 +32,7 @@
                             {% for i in one %}
 
                             <div class="carousel-item active"><img class="w-100 d-block" src="{{i.pic.url}}" alt="Slide Image" height="400px" width="600px">
-                                <div class="carousel-caption">
+                                <div class="carousel-caption carousel-caption-back">
                                     <h3>{{i.title}}</h3>
                                     <p>{{i.desc}}</p>
                                     <p>{{i.location}}</p>
@@ -42,7 +42,7 @@
                             {% for i in rest %}
 
                             <div class="carousel-item"><img class="w-100 d-block" src="{{i.pic.url}}" alt="Slide Image" height="400px" width="600px">
-                                <div class="carousel-caption">
+                                <div class="carousel-caption carousel-caption-back">
                                     <h3>{{i.title}}</h3>
                                     <p>{{i.desc}}</p>
                                     <p>{{i.location}}</p>
