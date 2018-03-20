@@ -10,7 +10,7 @@ class AddForm(forms.Form):
 	title = forms.CharField(max_length=200, widget=forms.TextInput(attrs={'class':'form-control'}))
 
 	location = forms.CharField(max_length = 100, widget=forms.TextInput(attrs={'class':'form-control'}))
-	desc = forms.CharField(max_length=400, widget=forms.TextInput(attrs={'class':'form-control'}))
+	desc = forms.CharField(label="Description", max_length=400, widget=forms.TextInput(attrs={'class':'form-control'}))
 	pic = forms.ImageField(label="Upload Image")
 
 	# name.widget.attrs.update({'class': 'special'})
