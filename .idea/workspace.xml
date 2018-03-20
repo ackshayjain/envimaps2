@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fdabcd9a-8738-4d5d-a4bb-b8c35a814e32" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/comp/templates/ES/index.html" afterPath="$PROJECT_DIR$/comp/templates/ES/index.html" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comp/templates/ES/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="179" column="126" lean-forward="false" selection-start-line="179" selection-start-column="126" selection-end-line="179" selection-end-column="126" />
+            <state relative-caret-position="433">
+              <caret line="51" column="223" lean-forward="false" selection-start-line="51" selection-start-column="223" selection-end-line="51" selection-end-column="223" />
               <folding />
             </state>
           </provider>
@@ -222,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comp/templates/ES/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="179" column="126" lean-forward="false" selection-start-line="179" selection-start-column="126" selection-end-line="179" selection-end-column="126" />
+        <state relative-caret-position="433">
+          <caret line="51" column="223" lean-forward="false" selection-start-line="51" selection-start-column="223" selection-end-line="51" selection-end-column="223" />
           <folding />
         </state>
       </provider>
