@@ -20,7 +20,9 @@ def index(request):
                 "https://maps.googleapis.com/maps/api/geocode/json?address=" + location + "&key=AIzaSyCIXeZdC33t1bfnjdPKGmoVg5ebtT4ddNY")
             json = r.json()
             results = json['results']
-            latLng = results[0]['geometry']['location']
+            latLng = {'lat': 25.2234975, 'lng': 73.7477857}
+            if(len(results) > 0):
+                latLng = results[0]['geometry']['location']
             # {'lat': 25.2234975, 'lng': 73.7477857}
             pic = request.FILES.get('pic', '')
             comp_obj = Complaint(lat=latLng['lat'], lon=latLng['lng'], title=title, desc=desc, location=location,
@@ -155,4 +157,13 @@ def thanks(request):
 
 
 def hmap(request):
-    return render(request, 'ES/heatmap.html')
+    comp_list = Complaint.objects.all()
+    # [ [l,l], [l,l] ]
+    latLng = []
+    for i in comp_list:
+        sub_list=[]
+        sub_list.append(i.lat)
+        sub_list.append(i.lon)
+        latLng.append(sub_list)
+    context = {'latLng':latLng}
+    return render(request, 'ES/heatmap.html', context)
