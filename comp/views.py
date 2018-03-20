@@ -50,11 +50,11 @@ def index(request):
         # comp_sub_list=[]
         # comp_sub_list_one=[]
 
-        # loc_list=[]
+        loc_list=[]
 
-        # # print(count_3)
-        # for i in comp_list:
-        #   loc_list.append(str(i.location))
+        # print(count_3)
+        for i in comp_list:
+          loc_list.append(str(i.location))
 
 
         # for i in range(0,count_3):
@@ -81,7 +81,7 @@ def index(request):
         count_range = range(1,count)
 
         # context = {'comp':comp_list, 'sub_list':comp_sub_list, 'list_one':comp_sub_list_one,'r':count_range, 'form':form, 'loc':loc_list}
-        context = {'comp':comp_list, 'r':count_range, 'one':list_one, 'rest':list_rest, 'form':form}
+        context = {'comp':comp_list, 'r':count_range, 'one':list_one, 'rest':list_rest, 'form':form,'loc':loc_list}
 
         # count_3 = count//3
         # if(count%3!=0):
