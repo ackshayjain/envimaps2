@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdabcd9a-8738-4d5d-a4bb-b8c35a814e32" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/comp/models.py" afterPath="$PROJECT_DIR$/comp/models.py" />
       <change beforePath="$PROJECT_DIR$/comp/templates/ES/index.html" afterPath="$PROJECT_DIR$/comp/templates/ES/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comp/templates/ES/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+            <state relative-caret-position="433">
+              <caret line="51" column="223" lean-forward="false" selection-start-line="51" selection-start-column="223" selection-end-line="51" selection-end-column="223" />
               <folding />
             </state>
           </provider>
@@ -222,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comp/templates/ES/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="433">
+          <caret line="51" column="223" lean-forward="false" selection-start-line="51" selection-start-column="223" selection-end-line="51" selection-end-column="223" />
           <folding />
         </state>
       </provider>
