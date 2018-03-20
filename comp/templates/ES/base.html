@@ -23,15 +23,18 @@
     <link rel="stylesheet" href="{% static 'css/Navigation-with-Button.css' %}">
     <link rel="stylesheet" href="{% static 'css/Navigation-with-Search.css' %}">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% block head %}{% endblock %}
 
 </head>
 
 <body>
     <div></div>
+
     <div>
         <div class="header-blue">
             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                <div class="container"><a class="navbar-brand" href="{% url 'home:index' %}">EnviMaps</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="container">
+                    <a class="navbar-brand" href="{% url 'home:index' %}">EnviMaps</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse"
                         id="navcol-1">
                         <ul class="nav navbar-nav">
@@ -42,9 +45,14 @@
                         </ul>
                         <form class="form-inline mr-auto" target="_self">
                             <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" id="search-field"></div>
-                        </form><span class="navbar-text"> <a href="#" class="login">Log In</a></span><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></div>
+                        </form><span class="navbar-text"> <a href="#" class="login">Log In</a></span><a class="btn btn-light action-button" role="button" href="#">Sign Up</a>
+                    </div>
                 </div>
             </nav>
+            {% block cm %}
+            {% endblock %}
+        </div>
+    </div>
 {% block body %} {% endblock %}
     <div class="footer-dark">
 
@@ -78,6 +86,7 @@
             </div>
         </footer>
     </div>
+
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>

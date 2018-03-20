@@ -1,7 +1,7 @@
 .header-blue {
   background:linear-gradient(135deg, #172a74, #21a9af);
   background-color:#184e8e;
-  padding-bottom:80px;
+  /*padding-bottom:80px;*/
   font-family:'Source Sans Pro', sans-serif;
 }
 
@@ -201,7 +201,7 @@
   border:1px solid #444;
   background-color:#aaa;
   overflow:hidden;
-  background:url(../../assets/img/screen-content-iphone-6.jpg);
+  /*background:url(../../assets/img/screen-content-iphone-6.jpg);*/
   background-size:cover;
   background-position:center;
 }

@@ -8,14 +8,14 @@ from .forms import AddForm
 
 def index(request):
 
-    
+
 
     if request.method == 'POST':
         # create a form instance and popuslate it with data from the request:
         form = AddForm(request.POST, request.FILES)
         # check whether it's valid:
         if form.is_valid():
-           
+
            title = request.POST.get('title','')
            desc = request.POST.get('desc','')
            location = request.POST.get('location','')
@@ -51,16 +51,16 @@ def index(request):
         # comp_sub_list_one=[]
 
         # loc_list=[]
-        
+
         # # print(count_3)
         # for i in comp_list:
         #   loc_list.append(str(i.location))
-          
+
 
         # for i in range(0,count_3):
         #   comp_sub=[]
 
-          
+
         #   if(i==count_3-1 and count%3!=0):
         #     r = range(0,count%3)
 
@@ -103,7 +103,7 @@ def index(request):
         # for i in range(0,count_3):
         #   comp_sub=[]
 
-          
+
         #   if(i==count_3-1 and count%3!=0):
         #     r = range(0,count%3)
 
@@ -123,22 +123,22 @@ def index(request):
         # count_range = range(1,count_3)
         # context = {'comp':comp_list, 'sub_list':comp_sub_list, 'list_one':comp_sub_list_one,'r':count_range, 'form':form, 'loc':loc_list, 'lat':lat_list, 'lon':lon_list}
 
-    
 
 
-    
+
+
 
     return render(request, 'ES/index.html', context)
 
 
 # def add_comp(request):
-    
+
 #     if request.method == 'POST':
 #         # create a form instance and popuslate it with data from the request:
 #         form = AddForm(request.POST, request.FILES)
 #         # check whether it's valid:
 #         if form.is_valid():
-           
+
 #            title = request.POST.get('title','')
 #            desc = request.POST.get('desc','')
 #            location = request.POST.get('location','')
@@ -158,3 +158,6 @@ def index(request):
 def thanks(request):
 
   return render(request, 'ES/thanks.html')
+
+def hmap(request):
+  return render(request, 'ES/heatmap.html')
