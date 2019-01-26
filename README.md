@@ -1,5 +1,10 @@
 # Envimaps
 
+### Contributers
+- [Ackshay Jain](https://github.com/ackshayjain)
+- [Abhishek Chaudhary](https://github.com/AbhishekChd)
+- [Saurabh Jindal](https://github.com/saurabh-jindal)
+
 ### Requirements
 - Django 1.8
 - Python 2.7
